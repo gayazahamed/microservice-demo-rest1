@@ -53,6 +53,7 @@ public class User {
 	private String firstName;
 	private String lastName;
 	private int age;
-	@Column(name = "nickname", nullable = false , length = 10)
+	
+ 	@Column(name = "nick_Name", nullable = false , length = 10)
 	private String nickName;
 }

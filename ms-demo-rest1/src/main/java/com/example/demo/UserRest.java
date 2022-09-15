@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.model.User;
@@ -48,18 +49,19 @@ public class UserRest {
 
 	
 	@GetMapping("/users/{id}")
-	public ResponseEntity getUser1(@PathVariable Integer id) {
+	public ResponseEntity getUser1(@PathVariable Integer id) throws ResNotFoundException {
 		 Optional<User> us= userrepo.findById(id);
-		 if(us.isPresent()) {
-			 
+		 if(us.isPresent()) {			 
 			 return ResponseEntity.ok(us.get());
+		 }else {
+			 throw new ResNotFoundException("user not thereeeee");
 		 }
-		 return ResponseEntity.status(HttpStatus.NOT_FOUND).body("User "+id +" not found");
+		// return ResponseEntity.status(HttpStatus.NOT_FOUND).body("User "+id +" not found");
 	}
 
 	
 	@PostMapping("/users")
-	public ResponseEntity createUser(User user) throws URISyntaxException{
+	public ResponseEntity createUser(@RequestBody User user) throws URISyntaxException{
 		user.setId(null);
 	User user2=	userrepo.save(user);
 		

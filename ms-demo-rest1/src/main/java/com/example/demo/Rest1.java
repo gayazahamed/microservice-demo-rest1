@@ -13,6 +13,7 @@ public class Rest1 {
 	
 	@GetMapping("/hello")
 	public String getName() {
+		System.out.println("this is hello method");
 		return "Hello World";
 	}
 	

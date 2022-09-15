@@ -1,3 +1,13 @@
 eureka
 
 http://localhost:8761/
+
+curl http://localhost:8082/hello
+watch curl http://localhost:8082/hello
+watch -n 0.1  curl http://localhost:8082/hello
+
+
+http://localhost:8082/users
+
+actuator
+http://localhost:8082/actuator
