@@ -11,3 +11,15 @@ http://localhost:8082/users
 
 actuator
 http://localhost:8082/actuator
+http://localhost:8761/
+
+
+
+http://localhost:8002/
+
+
+
+http://localhost:8082/h2-console/
+
+http://localhost:8082/users
+http://localhost:8082/users/1
