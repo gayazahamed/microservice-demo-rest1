@@ -23,3 +23,35 @@ http://localhost:8082/h2-console/
 
 http://localhost:8082/users
 http://localhost:8082/users/1
+
+
+
+docker run --detach --env MYSQL_ROOT_PASSWORD=dummypassword --env MYSQL_USER=social-media-user --env MYSQL_PASSWORD=dummypassword --env MYSQL_DATABASE=social-media-database --name mysql --publish 3306:3306 mysql:8-oracle
+
+
+
+docker run --detach 
+--env MYSQL_ROOT_PASSWORD=dummypassword 
+--env MYSQL_USER=social-media-user 
+--env MYSQL_PASSWORD=dummypassword 
+--env MYSQL_DATABASE=social-media-database
+--name mysql --publish 3306:3306 mysql:8-oracle
+
+C:\Users\Adil\AppData\Local\Temp\MicrosoftEdgeDownloads\1564ef5a-973a-44cc-8265-705b10984d42\sqldeveloper-22.2.1.234.1810-x64.zip
+
+
+
+
+
+
+
+C:\Users\Adil\.m2\repository\mysql\mysql-connector-java\8.0.30\mysql-connector-java-8.0.30.jar
+
+
+
+
+
+
+
+
+https://github.com/in28minutes/jpa-with-hibernate
