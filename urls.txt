@@ -55,3 +55,20 @@ C:\Users\Adil\.m2\repository\mysql\mysql-connector-java\8.0.30\mysql-connector-j
 
 
 https://github.com/in28minutes/jpa-with-hibernate
+
+
+
+
+
+
+spring.application.name=configServer
+sever.port=8888
+https://github.com/gayazahamed/git-localconfig-repo.git
+
+
+http://localhost:8888/limits-service/default
+
+
+
+
+

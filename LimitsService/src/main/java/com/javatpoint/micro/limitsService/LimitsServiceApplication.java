@@ -3,13 +3,13 @@ package com.javatpoint.micro.limitsService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.config.server.EnableConfigServer;
+//import org.springframework.cloud.config.server.EnableConfigServer;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 import com.javatpoint.micro.dependencyInjection.Laptop; 
-@EnableConfigServer
+//@EnableConfigServer
 
 @EnableAutoConfiguration
 @Configuration
@@ -21,8 +21,8 @@ public class LimitsServiceApplication {
 		 
 		
 		ConfigurableApplicationContext context = SpringApplication.run(LimitsServiceApplication.class, args);
-  Laptop l = context.getBean(Laptop.class);
- 	l.print();
+//  Laptop l = context.getBean(Laptop.class);
+// 	l.print();
 	}
 
 }

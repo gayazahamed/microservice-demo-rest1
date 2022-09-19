@@ -10,7 +10,8 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
-  
+import com.example.demo.exception.ErrorDetails;
+
 @ControllerAdvice
 public class CustomizedResponseEntityExceptionHandler extends ResponseEntityExceptionHandler{
  
@@ -31,7 +32,7 @@ public class CustomizedResponseEntityExceptionHandler extends ResponseEntityExce
 		System.out.println("2222222222222222");
 		StringBuffer sb = new StringBuffer();
 		
-		ex.getAllErrors().forEach(s -> sb.append(s));
+		//ex.getAllErrors().forEach(s -> sb.append(s));
 		
 
 		ErrorDetails errorDetails = new ErrorDetails(LocalDateTime.now(), 
